@@ -222,7 +222,7 @@ public class AudioPlayer: AVPlayerWrapperDelegate {
             self.enableRemoteCommands(item.getCommands())
         }
         else {
-            self.enableRemoteCommands(RemoteCommand.all())
+            self.enableRemoteCommands([.play, .pause, .stop, .togglePlayPause])
         }
     }
     
